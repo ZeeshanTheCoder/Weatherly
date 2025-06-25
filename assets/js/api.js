@@ -21,13 +21,13 @@ export const fetchData = (URL, callback) => {
 
 export const url = {
     currentWeather(lat, lon) {
-        return `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}`
+        return `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric`
     },
     forecast(lat, lon){
-        return `https://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}`
+        return `https://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}&units=metric`
     },
     airPollution(lat, lon){
-        return `https://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}`
+        return `https://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}&limit=5`
     },
     reverseGeo(lat, lon){
         return `http://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}&limit=5`

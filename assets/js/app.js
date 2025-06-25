@@ -75,10 +75,8 @@ searchField.addEventListener("input", () => {
                             <div>
                                 <p class="item-title">${name}</p>
                                 
-                                <p class="label-2 item-subtitle">${
-                                  state || ""
-                                }, ${country}</p>
-                                                            </div>
+                                <p class="label-2 item-subtitle">${state || ""}, ${country}</p>
+                            </div>
 
                             <a href="#/weather?lat=${lat}&lon=${lon}" class="item-link has-state" aria-label="${name} weather" data-search-toggler></a>
                         `;
