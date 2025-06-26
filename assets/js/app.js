@@ -155,7 +155,7 @@ export const updateWeather = (lat, lon) => {
 
             <div class="weapper">
                 <p class="heading">${parseInt(
-                  temp - 273.15
+                  temp
                 )}&deg;<sup>c</sup></p>
 
                 <img src="./assets/images/weather_icons/${icon}.png" width="64" height="64" alt="${description}" class="weather-icon">
@@ -352,7 +352,7 @@ export const updateWeather = (lat, lon) => {
                                         <span class="m-icon">thermostat</span>
 
                                         <p class="title-1">${parseInt(
-                                          feels_like - 273.15
+                                          feels_like
                                         )}&deg;<sup>c</sup></p>
                                         
                                     </div>
@@ -412,7 +412,7 @@ export const updateWeather = (lat, lon) => {
 
                     <img src="./assets/images/weather_icons/${icon}.png" width="48" height="48" loading="lazy" alt="${description}" title="${description}" class="weather-icon">
                     
-                    <p class="body-3">${parseInt(temp - 273.15)}&deg;</p>
+                    <p class="body-3">${parseInt(temp)}&deg;</p>
 
                 </div>
             `;
@@ -476,7 +476,7 @@ export const updateWeather = (lat, lon) => {
                 <img src="./assets/images/weather_icons/${icon}.png" alt="${description}" class="weather-icon" width="36" height="36" title="${description}">
 
                 <span>
-                    <p class="title-2">${parseInt(temp_max - 273.15)}&deg;<p>
+                    <p class="title-2">${parseInt(temp_max)}&deg;<p>
                 </span>
             </div>
 
