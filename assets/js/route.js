@@ -37,8 +37,9 @@ const routes = new Map([
 const checkHash = () => {
   const requestURL = window.location.hash.slice(1);
 
-  // If route is just '/', redirect to '/weather?lat=24.8546842&lon=67.0207055'
-  if (requestURL === "") {
+  // If route is just 'ZeeshanTheCoder.github.io/Weatherly', redirect to '/weather?lat=24.8546842&lon=67.0207055'
+  if (requestURL === "ZeeshanTheCoder.github.io/Weatherly") {
+  // if (requestURL === "") {
     window.location.hash = "/weather?lat=24.8546842&lon=67.0207055";
     return;
   }
@@ -53,11 +54,11 @@ const checkHash = () => {
 window.addEventListener("hashchange", checkHash);
 
 window.addEventListener("load", () => {
-  //     if(window.location.hash) {
-  //         window.location.hash = "#/current-location"
-  //     } else {
-  //         checkHash()
-  //     }
+      // if(window.location.hash) {
+      //     window.location.hash = "#/current-location"
+      // } else {
+      //     checkHash()
+      // }
 
   if (window.location.hash) {
     // Agar hash exist karta hai, to wahi route process karo
